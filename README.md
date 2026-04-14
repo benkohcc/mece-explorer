@@ -8,6 +8,21 @@ Enter a topic. Claude breaks it into 3–6 MECE categories. Click **+** on any c
 
 ![Tree view with detail panel](docs/MeceDetail.png)
 
+## Why It's Useful
+
+Most of the hard work in thinking clearly isn't generating ideas — it's *carving the space up* so you can tell what's missing, what's overlapping, and what deserves attention. MECE Explorer turns that carving into a fast, visual, AI-assisted loop.
+
+Concrete ways people use it:
+
+- **Scoping a new problem.** Before writing a strategy doc, PRD, or research plan, decompose the topic two or three levels deep to see the shape of the space. You'll spot gaps and priors you didn't know you had.
+- **Due diligence and learning a new domain.** Given an unfamiliar topic (e.g. "industrial heat pumps," "fraud in embedded finance"), produce a structured outline of the sub-areas and then click into any node for a targeted explainer — a faster path than a blank-page search.
+- **Competitive or market analysis.** Break "players in X market" by segment, geography, business model, and price tier in parallel trees and compare how the space looks through each lens.
+- **Interview and workshop prep.** Generate an issue tree for a case or discovery session in seconds, then use the detail panel to go deeper on specific branches as the conversation evolves.
+- **Writing and teaching.** Use the tree as a skeleton outline; the per-node explanations give you a head start on section-level prose.
+- **Product and feature discovery.** Decompose "failure modes of our checkout flow" or "reasons users churn" to generate hypotheses that are mutually exclusive — so every branch you investigate is tracking a genuinely distinct cause.
+
+The tool's value comes from the combination of **structure** (MECE discipline prevents sloppy or overlapping categories), **depth on demand** (you only pay model cost for the branches you care about), and **context preservation** (the full ancestry path is sent on every expansion, so deep nodes stay coherent with the root topic).
+
 ## Features
 
 - **Interactive tree expansion** — Categories render as an indented tree. Each node shows its label plus a one-line description inline. Click **+** to go deeper, **−** to collapse. No re-fetch on toggle.
