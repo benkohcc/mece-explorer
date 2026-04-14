@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+input::placeholder { color: #b0aea5; }
+
+@keyframes dotPulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+@keyframes tooltipIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(calc(-100% + 4px)); }
+  to { opacity: 1; transform: translateX(-50%) translateY(-100%); }
+}
+@keyframes slideDown {
+  from { opacity: 0; max-height: 0; }
+  to { opacity: 1; max-height: 60px; }
+}
+
+.dot-pulse { animation: dotPulse 1s ease-in-out infinite; }
+.tooltip-in { animation: tooltipIn 0.15s ease; }
+.slide-down { animation: slideDown 0.2s ease; }
+
+.tree-shell {
+  transition: padding-right 0.2s ease;
+}
+@media (min-width: 900px) {
+  .tree-shell.panel-open {
+    padding-right: 480px;
+  }
+}
+
+.bg-dotgrid {
+  background-image: radial-gradient(circle, #ccc9be 0.8px, transparent 0.8px);
+  background-size: 28px 28px;
+}
